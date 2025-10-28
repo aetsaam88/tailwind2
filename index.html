@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlas Construction — Professional Building & Civil Works</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="description" content="Atlas Construction — Residential, Commercial & Infrastructure projects. Responsive, modern construction company website template.">
+</head>
+
+<body class="bg-gradient-to-b from-slate-50 to-blue-50 text-slate-900 font-sans">
+
+    <header class="sticky top-2 z-50 w-full">
+        <div class="backdrop-blur-md bg-white/70 mx-auto rounded-2xl px-4 py-3 shadow-sm max-w-6xl">
+            <nav class="flex items-center justify-between flex-wrap">
+                <div class="flex items-center gap-3">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                        <rect width="24" height="24" rx="6" fill="#1e88e5"/>
+                        <path d="M6 16h12M6 12h12M6 8h8" stroke="#fff" stroke-width="1.2" stroke-linecap="round"/>
+                    </svg>
+                    <div>
+                        <h1 class="text-lg font-semibold">Atlas Construction</h1>
+                        <p class="text-xs text-slate-500">Building your vision — residential & commercial</p>
+                    </div>
+                </div>
+
+                <div class="hidden md:flex items-center gap-5">
+                    <a href="#home" class="hover:text-blue-600">Home</a>
+                    <a href="service.html" class="hover:text-blue-600">Services</a>
+                    <a href="projects.html" class="hover:text-blue-600">Projects</a>
+                    <a href="blog.html" class="hover:text-blue-600">Blog</a>
+                    <a href="contact.html" class="hover:text-blue-600">Contact</a>
+                    <button onclick="scrollToContact()" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg">Get Quote</button>
+                </div>
+
+                <button id="menu-button" class="md:hidden p-2 rounded-lg hover:bg-slate-200 transition" onclick="toggleMobile()">
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none">
+                        <path d="M4 7h16M4 12h16M4 17h16" stroke="#0b1220" stroke-width="1.6" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </nav>
+
+            <div id="mobileMenu" class="hidden flex-col gap-3 mt-3 md:hidden">
+                <a href="#home" class="hover:text-blue-600">Home</a>
+                <a href="service.html" class="hover:text-blue-600">Services</a>
+                <a href="projects.html" class="hover:text-blue-600">Projects</a>
+                <a href="blog.html" class="hover:text-blue-600">Blog</a>
+                <a href="contact.html" class="hover:text-blue-600">Contact</a>
+                <button onclick="scrollToContact()" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg mt-2">Get Quote</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="max-w-6xl mx-auto px-4 py-12 grid md:grid-cols-2 gap-10 items-center" id="home">
+        <div>
+            <h2 class="text-3xl md:text-4xl font-bold mb-3 text-slate-800">Quality construction — on time, on budget</h2>
+            <p class="text-slate-600 mb-5">We deliver high-quality residential, commercial, and infrastructure projects with an emphasis on safety and sustainability. Explore our services, projects, and latest insights.</p>
+            <div class="flex flex-wrap items-center gap-3">
+                <a href="projects.html" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-lg">Our Services</a>
+                <a href="projects.html" class="text-blue-600 hover:underline">View Projects →</a>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-8">
+                <div class="bg-white p-5 rounded-xl shadow-md">
+                    <svg width="36" height="36" fill="none"><path d="M3 12l9-6 9 6v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-6z" stroke="#1e88e5" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <h3 class="font-semibold mt-2">Residential</h3>
+                    <p class="text-sm text-slate-600">Homes, villas, & renovations using modern materials and energy-efficient methods.</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow-md">
+                    <svg width="36" height="36" fill="none"><path d="M3 12h18M7 6h10v12H7z" stroke="#1e88e5" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <h3 class="font-semibold mt-2">Commercial</h3>
+                    <p class="text-sm text-slate-600">Offices, retail spaces, and warehouses built to last with flexible layouts.</p>
+                </div>
+                <div class="bg-white p-5 rounded-xl shadow-md">
+                    <svg width="36" height="36" fill="none"><path d="M12 2v20M2 12h20" stroke="#1e88e5" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    <h3 class="font-semibold mt-2">Infrastructure</h3>
+                    <p class="text-sm text-slate-600">Roads, drainage, and small civil works with careful site planning.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="slider" class="relative overflow-hidden rounded-2xl shadow-lg"> 
+            <div id="slides" class="flex transition-transform duration-700">
+                <div class="min-w-full">
+                    <div class="h-64 bg-cover bg-center flex items-end text-white p-4 rounded-xl" style="background-image:url('s1.jpg')">
+                        <div class="bg-gradient-to-t from-black/60 to-transparent p-3 rounded-lg">
+                            <strong>Modern Villa Completion</strong>
+                            <p class="text-sm">Completed 2024 — Client: Private residence</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="min-w-full">
+                    <div class="h-64 bg-cover bg-center flex items-end text-white p-4" style="background-image:url('s2.jpg')">
+                        <div class="bg-gradient-to-t from-black/60 to-transparent p-3 rounded-lg">
+                            <strong>Commercial Complex</strong>
+                            <p class="text-sm">Steel-framed commercial building — ongoing</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="min-w-full">
+                    <div class="h-64 bg-cover bg-center flex items-end text-white p-4" style="background-image:url('s3.jpg')">
+                        <div class="bg-gradient-to-t from-black/60 to-transparent p-3 rounded-lg">
+                            <strong>Road & Drainage Works</strong>
+                            <p class="text-sm">Public infrastructure project — completed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="absolute top-3 left-3 right-3 flex justify-between">
+                <button onclick="prevSlide()" class="bg-white/80 px-2 rounded-md">◀</button>
+                <button onclick="nextSlide()" class="bg-white/80 px-2 rounded-md">▶</button>
+            </div>
+
+            <div id="dotbar" class="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-2">
+                <div class="w-3 h-3 bg-white rounded-full dot" data-index="0"></div>
+                <div class="w-3 h-3 bg-white/50 rounded-full dot" data-index="1"></div>
+                <div class="w-3 h-3 bg-white/50 rounded-full dot" data-index="2"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="max-w-6xl mx-auto px-4 py-10 bg-white rounded-xl shadow-md">
+        <h2 class="text-2xl font-bold mb-3">Our Approach & Services</h2>
+        <p class="text-slate-600 mb-4">Atlas Construction provides end-to-end construction services — from initial design coordination, material procurement, site supervision, to final handover. We prioritize safety, quality control, and timely delivery.</p>
+
+        <h3 class="font-semibold mt-5 mb-2">Detailed Services</h3>
+        <ul class="list-disc list-inside text-slate-600 space-y-1">
+            <li>Design coordination & value engineering</li>
+            <li>Project management & scheduling</li>
+            <li>Structural works (RC, Steel)</li>
+            <li>Finishing works: tiles, plaster, painting, MEP coordination</li>
+            <li>Renovation & retrofitting</li>
+        </ul>
+
+        <h3 class="font-semibold mt-6 mb-2">Why choose us?</h3>
+        <p class="text-slate-600">We combine experienced civil engineers, qualified contractors, and transparent reporting. Our teams use modern construction methods and ensure regulatory compliance at every stage.</p>
+
+        <h3 class="font-semibold mt-6 mb-2">Project Lifecycle</h3>
+        <ol class="list-decimal list-inside text-slate-600 space-y-1">
+            <li>Consultation & feasibility</li>
+            <li>Design & approvals</li>
+            <li>Construction & QA</li>
+            <li>Handover & maintenance advice</li>
+        </ol>
+    </section>
+
+    <section id="projects" class="max-w-6xl mx-auto px-4 py-10">
+        <h2 class="text-2xl font-bold mb-4">Featured Projects</h2>
+        <div class="flex flex-col md:flex-row gap-6">
+            <img src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?q=80&w=1200&auto=format&fit=crop" alt="project" class="rounded-xl shadow-md w-full md:w-1/2">
+            <div class="flex-1">
+                <h3 class="text-lg font-semibold">Skyline Business Tower</h3>
+                <p class="text-slate-600 mb-3">A 7-floor commercial complex with modern facade and flexible floor plates. Works included structural frame, MEP coordination and interior finishes.</p>
+                <a href="#projects" class="text-blue-600 hover:underline">Read case study →</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="blog" class="max-w-6xl mx-auto px-4 py-10">
+        <h2 class="text-2xl font-bold mb-5">Latest from our Blog</h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <article class="bg-white rounded-xl shadow-md overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?q=80&w=1200&auto=format" alt="blog" class="w-full h-40 object-cover">
+                <div class="p-4">
+                    <h4 class="font-semibold mb-1">Top 7 Tips to Reduce Construction Delays</h4>
+                    <p class="text-sm text-slate-600">Scheduling, procurement, and realistic contingencies — learn how to keep projects on track.</p>
+                </div>
+            </article>
+
+            <article class="bg-white rounded-xl shadow-md overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1200&auto=format" alt="blog" class="w-full h-40 object-cover">
+                <div class="p-4">
+                    <h4 class="font-semibold mb-1">Choosing the Right Foundation for Your Site</h4>
+                    <p class="text-sm text-slate-600">Site soils, water table, and structural loading — foundational decisions that last decades.</p>
+                </div>
+            </article>
+
+            <article class="bg-white rounded-xl shadow-md overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?q=80&w=1200&auto=format" alt="blog" class="w-full h-40 object-cover">
+                <div class="p-4">
+                    <h4 class="font-semibold mb-1">Materials That Improve Energy Efficiency</h4>
+                    <p class="text-sm text-slate-600">Insulation, glazing, and finishes that reduce running costs and increase comfort.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section id="contact" class="max-w-6xl mx-auto px-4 py-10">
+        <h2 class="text-2xl font-bold mb-4">Contact & Request Quote</h2>
+        <div class="flex flex-col md:flex-row gap-8">
+            <form id="contactForm" onsubmit="event.preventDefault();submitForm()" class="flex-1 grid gap-3">
+                <input type="text" id="name" placeholder="Your name" class="border border-slate-300 rounded-lg p-3" required>
+                <input type="email" id="email" placeholder="Email" class="border border-slate-300 rounded-lg p-3" required>
+                <textarea id="message" rows="5" placeholder="Project details" class="border border-slate-300 rounded-lg p-3" required></textarea>
+                <div class="flex gap-3">
+                    <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white py-2 px-5 rounded-lg">Send Request</button>
+                    <button type="reset" class="border border-slate-300 py-2 px-5 rounded-lg">Reset</button>
+                </div>
+            </form>
+
+            <div class="w-full md:w-1/3 bg-white p-5 rounded-xl shadow-md">
+                <h4 class="font-semibold mb-2">Quick Info</h4>
+                <p class="text-sm text-slate-600">Phone: +92 300 0000000<br>Address: Jhelum, Pakistan<br>Email: info@atlascon.pk</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-slate-900 text-slate-300 py-10 px-6 md:px-20">
+        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <div>
+                <h3 class="text-yellow-400 font-semibold mb-2">About Us</h3>
+                <p>BuildRight Engineers is a leading construction company specializing in modern architecture, smart building solutions, and sustainable infrastructure.</p>
+            </div>
+            <div>
+                <h3 class="text-yellow-400 font-semibold mb-2">Quick Links</h3>
+                <ul class="space-y-1">
+                    <li><a href="#" class="hover:text-yellow-400">Home</a></li>
+                    <li><a href="#" class="hover:text-yellow-400">Services</a></li>
+                    <li><a href="#" class="hover:text-yellow-400">Projects</a></li>
+                    <li><a href="#" class="hover:text-yellow-400">Blog</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-yellow-400 font-semibold mb-2">Contact Info</h3>
+                <ul class="space-y-1">
+                    <li>📍 Jhelum, Pakistan</li>
+                    <li>📞 +92 333 0000000</li>
+                    <li>✉️ info@buildright.com</li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        function toggleMobile() {
+            const m = document.getElementById('mobileMenu');
+            // Toggle the 'hidden' class for responsive menu behavior
+            m.classList.toggle('hidden');
+            // Ensure the menu displays as a column when visible
+            if (!m.classList.contains('hidden')) {
+                m.classList.add('flex');
+            } else {
+                m.classList.remove('flex');
+            }
+        }
+
+        function scrollToContact() {
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        let idx = 0;
+        const slides = document.getElementById('slides');
+        const total = slides ? slides.children.length : 0;
+        const dots = Array.from(document.querySelectorAll('.dot'));
+        const sliderEl = document.getElementById('slider'); // Correctly target the slider container
+
+        function goTo(i) {
+            if (!slides) return;
+            idx = (i + total) % total;
+            slides.style.transform = `translateX(-${idx * 100}%)`;
+
+            // Update dot bar styles
+            dots.forEach(d => {
+                d.classList.remove('bg-white');
+                d.classList.add('bg-white/50');
+            });
+            if (dots[idx]) {
+                dots[idx].classList.remove('bg-white/50');
+                dots[idx].classList.add('bg-white');
+            }
+        }
+
+        function nextSlide() { goTo(idx + 1) }
+        function prevSlide() { goTo(idx - 1) }
+
+        // Initialize slider state and auto-play
+        let sliderTimer;
+        
+        function startSlider() {
+            if (sliderTimer) clearInterval(sliderTimer);
+            sliderTimer = setInterval(nextSlide, 4500);
+        }
+
+        if (sliderEl && total > 0) {
+            goTo(0); // Initial setup
+            startSlider();
+
+            sliderEl.addEventListener('mouseenter', () => clearInterval(sliderTimer));
+            sliderEl.addEventListener('mouseleave', startSlider);
+        }
+
+        // Dot click listeners
+        dots.forEach(d => d.addEventListener('click', e => goTo(Number(e.target.dataset.index))));
+
+        function submitForm() {
+            const name = document.getElementById('name').value;
+            alert('Thanks ' + name + '! Your request has been received. (Demo)');
+            document.getElementById('contactForm').reset();
+        }
+    </script>
+</body>
+</html>

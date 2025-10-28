@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Projects | TitanBuild Construction</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom styles for background images and utility overrides */
+    .hero-bg {
+      background-image: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)),
+        url('s4.jpg'); 
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800 leading-relaxed font-sans">
+  
+  <header class="bg-gray-900 py-5 sticky top-0 z-50 shadow-lg">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+      <h1 class="text-3xl font-bold tracking-wider text-yellow-400">TitanBuild</h1>
+
+      <button id="menu-button" class="lg:hidden p-2 text-white hover:text-yellow-400 focus:outline-none">
+        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+
+      <nav id="mobile-menu" class="hidden lg:block">
+        <ul class="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-8 list-none p-0 text-center lg:text-left
+                   absolute top-20 left-0 right-0 bg-gray-900 shadow-md lg:relative lg:top-0 lg:bg-transparent lg:shadow-none lg:w-auto w-full">
+          <li><a href="index.html" class="block text-white hover:text-yellow-400 transition duration-300 font-medium text-lg py-2 px-4 lg:py-0 lg:px-0">Home</a></li>
+          <li><a href="service.html" class="block text-white hover:text-yellow-400 transition duration-300 font-medium text-lg py-2 px-4 lg:py-0 lg:px-0">Services</a></li>
+          <li><a href="#" class="block text-yellow-400 font-medium text-lg py-2 px-4 lg:py-0 lg:px-0 border-b-2 border-yellow-400 lg:border-0">Projects</a></li>
+          <li><a href="blog.html" class="block text-white hover:text-yellow-400 transition duration-300 font-medium text-lg py-2 px-4 lg:py-0 lg:px-0">Blog</a></li>
+          <li><a href="contact.html" class="block text-white hover:text-yellow-400 transition duration-300 font-medium text-lg py-2 px-4 lg:py-0 lg:px-0">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero-bg h-96 sm:h-[60vh] flex justify-center items-center text-center text-white shadow-xl">
+    <div class="px-4">
+      <h2 class="text-4xl sm:text-5xl lg:text-6xl mb-3 font-extrabold text-yellow-400 drop-shadow-lg">Our Projects</h2>
+      <p class="text-base sm:text-lg text-gray-200 max-w-3xl mx-auto drop-shadow-md">Explore our most successful construction and engineering works across residential, commercial, and infrastructure sectors.</p>
+    </div>
+  </section>
+
+  <section class="max-w-7xl mx-auto my-16 sm:my-20 px-4 sm:px-6 lg:px-8 text-center">
+    <h2 class="text-4xl font-bold uppercase mb-2 text-gray-900">Featured Projects</h2>
+    <p class="text-gray-600 text-lg mb-12">We take pride in every structure we build. Our portfolio reflects dedication, quality, and innovation in construction.</p>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-400 group">
+        <div class="overflow-hidden">
+          <img src="s1.jpg" alt="Luxury Villa" class="w-full h-56 object-cover transition duration-500 group-hover:scale-105 group-hover:brightness-75">
+        </div>
+        <div class="p-5 text-left">
+          <h3 class="text-2xl font-semibold text-yellow-500 mb-2">Luxury Villa</h3>
+          <p class="text-gray-600 text-base mb-3">Modern architecture and elegant interiors with sustainable design solutions.</p>
+          <span class="inline-block bg-gray-900 text-white px-3 py-1 rounded-md text-sm font-medium">Residential</span>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-400 group">
+        <div class="overflow-hidden">
+          <img src="s2.jpg" alt="Corporate Tower" class="w-full h-56 object-cover transition duration-500 group-hover:scale-105 group-hover:brightness-75">
+        </div>
+        <div class="p-5 text-left">
+          <h3 class="text-2xl font-semibold text-yellow-500 mb-2">Corporate Tower</h3>
+          <p class="text-gray-600 text-base mb-3">A high-rise commercial building equipped with smart energy systems and eco materials.</p>
+          <span class="inline-block bg-gray-900 text-white px-3 py-1 rounded-md text-sm font-medium">Commercial</span>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-400 group">
+        <div class="overflow-hidden">
+          <img src="s3.jpg" alt="Bridge Project" class="w-full h-56 object-cover transition duration-500 group-hover:scale-105 group-hover:brightness-75">
+        </div>
+        <div class="p-5 text-left">
+          <h3 class="text-2xl font-semibold text-yellow-500 mb-2">River Bridge</h3>
+          <p class="text-gray-600 text-base mb-3">Innovative infrastructure project designed for durability and modern engineering standards.</p>
+          <span class="inline-block bg-gray-900 text-white px-3 py-1 rounded-md text-sm font-medium">Infrastructure</span>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-400 group">
+        <div class="overflow-hidden">
+          <img src="s1.jpg" alt="Shopping Complex" class="w-full h-56 object-cover transition duration-500 group-hover:scale-105 group-hover:brightness-75">
+        </div>
+        <div class="p-5 text-left">
+          <h3 class="text-2xl font-semibold text-yellow-500 mb-2">Shopping Complex</h3>
+          <p class="text-gray-600 text-base mb-3">Designed for comfort and retail convenience with spacious architectural layout.</p>
+          <span class="inline-block bg-gray-900 text-white px-3 py-1 rounded-md text-sm font-medium">Commercial</span>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-400 group">
+        <div class="overflow-hidden">
+          <img src="s5.jpg" alt="Roadway Network" class="w-full h-56 object-cover transition duration-500 group-hover:scale-105 group-hover:brightness-75">
+        </div>
+        <div class="p-5 text-left">
+          <h3 class="text-2xl font-semibold text-yellow-500 mb-2">Roadway Network</h3>
+          <p class="text-gray-600 text-base mb-3">City-scale road construction project ensuring safety and long-term reliability.</p>
+          <span class="inline-block bg-gray-900 text-white px-3 py-1 rounded-md text-sm font-medium">Infrastructure</span>
+        </div>
+      </div>
+      
+      <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition duration-400 group">
+        <div class="overflow-hidden">
+          <img src="s6.jpg" alt="Shopping Complex" class="w-full h-56 object-cover transition duration-500 group-hover:scale-105 group-hover:brightness-75">
+        </div>
+        <div class="p-5 text-left">
+          <h3 class="text-2xl font-semibold text-yellow-500 mb-2">Shopping Complex</h3>
+          <p class="text-gray-600 text-base mb-3">Designed for comfort and retail convenience with spacious architectural layout.</p>
+          <span class="inline-block bg-gray-900 text-white px-3 py-1 rounded-md text-sm font-medium">Commercial</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="bg-gray-900 text-gray-400 p-10 sm:p-16 flex flex-wrap justify-between gap-8">
+    
+    <div class="w-full sm:w-1/2 lg:w-1/4">
+      <h3 class="text-xl font-bold text-yellow-400 mb-4">About Us</h3>
+      <p class="text-sm">BuildRight Engineers is a leading construction company specializing in modern architecture, smart building solutions, and sustainable infrastructure.</p>
+    </div>
+
+    <div class="w-1/2 sm:w-1/4 lg:w-1/6">
+      <h3 class="text-xl font-bold text-yellow-400 mb-4">Quick Links</h3>
+      <ul class="list-none p-0 space-y-1">
+        <li><a href="#" class="text-sm hover:text-yellow-400 transition duration-300">Home</a></li>
+        <li><a href="#" class="text-sm hover:text-yellow-400 transition duration-300">Services</a></li>
+        <li><a href="#" class="text-sm hover:text-yellow-400 transition duration-300">Projects</a></li>
+        <li><a href="#" class="text-sm hover:text-yellow-400 transition duration-300">Blog</a></li>
+      </ul>
+    </div>
+
+    <div class="w-1/2 sm:w-1/4 lg:w-1/6">
+      <h3 class="text-xl font-bold text-yellow-400 mb-4">Contact Info</h3>
+      <ul class="list-none p-0 space-y-1">
+        <li class="text-sm">📍 Jhelum, Pakistan</li>
+        <li class="text-sm">📞 +92 333 0000000</li>
+        <li class="text-sm">✉️ info@buildright.com</li>
+      </ul>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const menuButton = document.getElementById('menu-button');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      if (menuButton && mobileMenu) {
+        menuButton.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+
+        const menuLinks = mobileMenu.querySelectorAll('a');
+        menuLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            if (!mobileMenu.classList.contains('hidden') && window.innerWidth < 1024) {
+              mobileMenu.classList.add('hidden');
+            }
+          });
+        });
+      }
+    });
+  </script>
+
+</body>
+</html>
